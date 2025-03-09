@@ -11,12 +11,33 @@
         <div class="absolute inset-0 bg-[url('../../public/images/background.jpg')] bg-no-repeat bg-center bg-cover bg-fixed opacity-20"></div>
     </section>
 
-    <section id="portfolio" class="h-screen flex items-center justify-center bg-gray-900 relative overflow-hidden">
-        <div class="text-center z-10">
-            <h2 class="text-3xl md:text-5xl font-bold animate-slide-up">My Portfolio</h2>
-            <p class="mt-4 text-lg animate-slide-up">My Favorite Projects to date.</p>
+    <section id="portfolio" class="h-screen flex flex-col items-center justify-center bg-gray-900 relative overflow-hidden">
+        <div class="flex">
+            <div class="text-center z-10 py-48">
+                <h2 class="text-3xl md:text-5xl font-bold animate-slide-up">My Portfolio</h2>
+                <p class="mt-4 text-lg animate-slide-up">My Favorite Projects to date.</p>
+            </div>
         </div>
-        <div class="absolute top-0 left-0 w-full h-full opacity-10"></div>
+        <div class="flex">
+            <div class="flex justify-between items-center">
+                <div class="p-12 bg-gray-800">   
+                    <img src="{{ asset('images/quattro.png') }}">
+                    <div class="bg-[url('../../public/images/quattro.png')] bg-no-repeat bg-[auto_50%] bg-origin-content bg-left bg-contain bg-fixed opacity-30 w-full h-60"></div>
+                    <h3>Project 1</h3>
+                    <p>Project Description</p>
+                </div>
+                <div class="p-12">
+                    <div class="bg-[url('../../public/images/quattro.png')] bg-no-repeat opacity-30 w-60 h-40"></div>
+                    <h3>Project 2</h3>
+                    <p>Project Description</p>
+                </div>
+                <div class="p-12">
+                    <div class="bg-[url('../../public/images/quattro.png')] bg-no-repeat bg-center bg-fixed opacity-30 w-60 h-40"></div>
+                    <h3>Project 3</h3>
+                    <p>Project Description</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section with Gradient Animation and Scrolling Effect -->
