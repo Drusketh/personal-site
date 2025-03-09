@@ -11,18 +11,18 @@
         <div class="absolute inset-0 bg-[url('../../public/images/background.jpg')] bg-no-repeat bg-center bg-cover bg-fixed opacity-20"></div>
     </section>
 
-    <section id="portfolio" class="h-screen flex flex-col items-center justify-center bg-gray-900 relative overflow-hidden">
+    <section id="portfolio" class="h-max flex flex-col items-center justify-center bg-gray-900 relative overflow-hidden">
         <div class="flex">
-            <div class="text-center z-10 py-48">
+            <div class="text-center z-10 pt-24 lg:pb-24">
                 <h2 class="text-3xl md:text-5xl font-bold animate-slide-up">My Portfolio</h2>
                 <p class="mt-4 text-lg animate-slide-up">My Favorite Projects to date.</p>
             </div>
         </div>
         <div class="flex p-12 h-[60%]">
-            <div class="flex sm:flex-col lg:flex-row p-12 gap-12 w-screen justify-between items-center w-max">
+            <div class="flex flex-col lg:flex-row p-12 gap-12 w-screen justify-between items-center w-max">
                 <div class="flex-1 p-12 bg-gray-850 h-full relative">
                     <img src="{{ asset('images/quattro.png') }}" class="mx-[-3rem] my-[-5rem] min-w-[calc(100%+6rem)] brightness-50">
-                    <div class="absolute inset-16 bg-[rgba(0,0,0,0.1)] h-min w-fit py-4 pl-3">
+                    <div class="absolute left-16 top-8 bg-[rgba(0,0,0,0.1)] h-min w-fit py-4 pl-3">
                         <h2 class="text-3xl">Audi Coupe Quattro</h2>
                         <p>A Blender recreation of Audi's greatest creation</p>
                     </div>
