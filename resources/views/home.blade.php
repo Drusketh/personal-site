@@ -18,21 +18,21 @@
                 <p class="mt-4 text-lg animate-slide-up">My Favorite Projects to date.</p>
             </div>
         </div>
-        <div class="flex">
-            <div class="flex justify-between items-center">
-                <div class="p-12 bg-gray-800">   
-                    <img src="{{ asset('images/quattro.png') }}">
-                    <div class="bg-[url('../../public/images/quattro.png')] bg-no-repeat bg-[auto_50%] bg-origin-content bg-left bg-contain bg-fixed opacity-30 w-full h-60"></div>
-                    <h3>Project 1</h3>
-                    <p>Project Description</p>
+        <div class="flex p-12 h-[60%]">
+            <div class="flex sm:flex-col lg:flex-row p-12 gap-12 w-screen justify-between items-center w-max">
+                <div class="flex-1 p-12 bg-gray-850 h-full relative">
+                    <img src="{{ asset('images/quattro.png') }}" class="mx-[-3rem] my-[-5rem] min-w-[calc(100%+6rem)] brightness-50">
+                    <div class="absolute inset-16 bg-[rgba(0,0,0,0.1)] h-min w-fit py-4 pl-3">
+                        <h2 class="text-3xl">Audi Coupe Quattro</h2>
+                        <p>A Blender recreation of Audi's greatest creation</p>
+                    </div>
                 </div>
-                <div class="p-12">
-                    <div class="bg-[url('../../public/images/quattro.png')] bg-no-repeat opacity-30 w-60 h-40"></div>
+                <div class="flex-1 p-12 bg-gray-800 h-full">
                     <h3>Project 2</h3>
                     <p>Project Description</p>
                 </div>
-                <div class="p-12">
-                    <div class="bg-[url('../../public/images/quattro.png')] bg-no-repeat bg-center bg-fixed opacity-30 w-60 h-40"></div>
+                <div class="flex-1 p-12 bg-gray-800 h-full">
+
                     <h3>Project 3</h3>
                     <p>Project Description</p>
                 </div>
