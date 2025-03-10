@@ -21,20 +21,25 @@
         <div class="flex p-12 h-[60%]">
             <div class="flex flex-col lg:flex-row p-12 gap-12 w-screen justify-between items-center w-max">
                 <div class="flex-1 p-12 bg-gray-850 h-full relative">
-                    <img src="{{ asset('images/quattro.png') }}" class="mx-[-3rem] my-[-5rem] min-w-[calc(100%+6rem)] brightness-50">
+                    <img src="{{ asset('images/quattro.png') }}" class="mx-[-3rem] my-[-5rem] min-w-[calc(100%+6rem)] brightness-[0.6]">
                     <div class="absolute left-16 top-8 bg-[rgba(0,0,0,0.1)] h-min w-fit py-4 pl-3">
                         <h2 class="text-3xl">Audi Coupe Quattro</h2>
                         <p>A Blender recreation of Audi's greatest creation</p>
                     </div>
                 </div>
-                <div class="flex-1 p-12 bg-gray-800 h-full">
-                    <h3>Project 2</h3>
-                    <p>Project Description</p>
+                <div class="flex-1 p-12 bg-gray-850 h-full relative">
+                    <img src="{{ asset('images/sterling.png') }}" class="mx-[-3rem] my-[-5rem] min-w-[calc(100%+6rem)] brightness-[0.7]">
+                    <div class="absolute right-12 bottom-16 bg-[rgba(0,0,0,0.1)] h-min w-fit py-4 px-4 text-right">
+                        <h2 class="text-3xl">SSC Sterling</h2>
+                        <p>A Volkswagen-Based kit car</p>
+                    </div>
                 </div>
-                <div class="flex-1 p-12 bg-gray-800 h-full">
-
-                    <h3>Project 3</h3>
-                    <p>Project Description</p>
+                <div class="flex-1 p-12 bg-gray-850 h-full relative">
+                    <img src="{{ asset('images/spherenet.png') }}" class="mx-[-3rem] my-[-0rem] min-w-[calc(100%+6rem)] brightness-[0.7]">
+                    <div class="absolute right-12 top-16 bg-[rgba(0,0,0,0.1)] h-min w-fit py-4 px-4 text-right">
+                        <h2 class="text-3xl">Petram Sphere</h2>
+                        <p>An economic assistant for an online nation simulator</p>
+                    </div>
                 </div>
             </div>
         </div>
