@@ -7,6 +7,16 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/quattro', function () {
+    return view('quattro');
+});
+Route::get('/sterling', function () {
+    return view('sterling');
+});
+Route::get('/spherenet', function () {
+    return view('spherenet');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
