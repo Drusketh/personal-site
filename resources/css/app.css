@@ -57,3 +57,9 @@
     animation: gradient-y 8s ease infinite;
     background-size: 200% 200%;
 }
+
+@layer base {
+    a {
+      @apply text-blue-600
+    }
+}

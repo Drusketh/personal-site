@@ -1,51 +1,64 @@
 @extends('layouts.layout')
 
 @section('content')
-    <section class="h-auto w-full py-20 bg-gradient-to-b from-gray-800 to-gray-900 relative">
-        <!-- Header Image -->
-        <div class="text-center z-10">
-            <h1 class="text-5xl md:text-7xl font-bold text-white animate-fade-in">Object Title</h1>
-            <p class="mt-4 text-lg animate-fade-in"></p>
-        </div>
-        <div class="absolute w-full h-96 bg-cover bg-center bg-[url('../../public/images/4.png')]">
+    <section class="h-auto w-full bg-gradient-to-b from-gray-800 to-gray-900 relative">
 
         <!-- Item Details -->
-        <div class="container mx-auto px-6 md:px-20 py-12 text-white animate-slide-up">
-            <h2 class="text-3xl font-semibold mb-6">Item Overview</h2>
+        <div class="container mx-auto px-6 md:px-40 py-12">
+            <div class="text-center z-10">
+                <h1 class="text-5xl md:text-7xl font-bold text-white animate-fade-in">Audi Sport Quattro</h1>
+                <p class="mt-4 text-lg animate-fade-in"></p>
+            </div>
+
+            <div class="w-[80%] pb-16 items-center justify-center mx-auto">
+                <img src="{{ asset('images/quattro_1.png') }}" class="mx-[-3rem] my-[-5rem] min-w-[calc(100%+6rem)] brightness-[1]">
+            </div>
+            
+            <h2 class="text-3xl font-semibold mb-6">Overview</h2>
             <p class="text-lg leading-relaxed mb-8">
-                This section contains a detailed overview of the object being showcased. It explains its features, 
-                design elements, and functionality. The content is meant to engage the viewer by providing context and
-                in-depth information about the item.
+                I have always loved cars, and after I discovered the Group B Rally existed, this became my favorite production car. It sports a 2.1L Turbo inline-5 engine. I decided to model this car 
+                as I felt it would be a good challenge for my blender abilities, given the straight boxy design with a deceptive amount of curves. My only future plan for this model is to 
+                use it to make a dimensionally accurate fiberglass kit for a car, after my Sterling is finished. 
             </p>
 
             <!-- Features Section -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">
                 <div>
-                    <h3 class="text-2xl font-semibold mb-4">Key Features</h3>
+                    <h3 class="text-2xl font-semibold mb-4">Skills Used</h3>
                     <ul class="list-disc list-inside space-y-2">
-                        <li>Feature 1: High-quality materials used</li>
-                        <li>Feature 2: Innovative design and build</li>
-                        <li>Feature 3: Enhanced functionality</li>
-                        <li>Feature 4: Customizable options available</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-semibold mb-4">Specifications</h3>
-                    <ul class="list-disc list-inside space-y-2">
-                        <li>Dimensions: 25cm x 35cm x 15cm</li>
-                        <li>Weight: 1.5kg</li>
-                        <li>Material: Aluminum, ABS plastic</li>
-                        <li>Color: Matte black</li>
+                        <li>Blender Material editor, used to make light lenses and paint</li>
+                        <li>Mesh Modelling</li>
+                        <li>Modelling from images only</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Call to Action -->
-            <div class="text-center">
-                <a href="#"
-                   class="bg-blue-600 hover:bg-blue-500 text-white py-3 px-8 rounded-lg text-lg transition ease-in-out duration-300">
-                    Learn More
-                </a>
+            <div>
+                <h2 class="text-3xl font-semibold mb-6">Gallery</h2>
+                <p class="mt-4 text-lg animate-fade-in mb-6"></p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-3 p-12 items-center bg-gray-800">
+                    <div class="bg-gray-950 h-full relative border-2 border-solid border-black">
+                        <img src="{{ asset('images/quattro.png') }}" class="">
+                    </div>
+                    <div class="bg-gray-950 h-full relative border-2 border-solid border-black">
+                        <img src="{{ asset('images/quattro_1.png') }}" class="absolute top-[17%]">
+                    </div>
+                    <div class="bg-gray-950 h-full relative border-2 border-solid border-black">
+                        <img src="{{ asset('images/quattro_2.png') }}" class="absolute top-[12%]">
+                    </div>
+                    <div class="bg-gray-950 h-full relative border-2 border-solid border-black">
+                        <img src="{{ asset('images/quattro_3.png') }}" class="">
+                    </div>
+                    <div class="bg-gray-950 h-full relative border-2 border-solid border-black">
+                        <img src="{{ asset('images/quattro_4.png') }}" class="absolute top-[10%]">
+                    </div>
+                    <div class="bg-gray-950 h-full relative border-2 border-solid border-black">
+                        <img src="{{ asset('images/quattro_5.png') }}" class="absolute top-[6%]">
+                    </div>
+                    <div class="bg-gray-950 h-full relative border-2 border-solid border-black">
+                        <img src="{{ asset('images/quattro_6.png') }}" class="">
+                    </div>
+                </div>
             </div>
         </div>
     </section>

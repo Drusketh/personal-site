@@ -55,19 +55,8 @@
     <section id="contact" class="h-fit flex flex-col items-center justify-center relative overflow-hidden">
         <div class="flex">
             <div class="text-center z-10">
-                <h2 class="text-3xl md:text-5xl font-bold animate-bounce">Get In Touch</h2>
-                <p class="mt-4 text-lg animate-bounce">Feel free to reach out for any inquiries or collaborations.</p>
-            </div>
-        </div>
-        <div class="flex flex-col">
-            <div class="flex flex-row p-12 gap-12 w-max justify-between items-center">
-                <a target="_blank" href="https://www.instagram.com/nathan.pollaro/"><img src="{{ asset('svgs/icons8-instagram.svg') }}"/></a>
-                <a target="_blank" href="https://www.facebook.com/nathan.pollaro/"><img src="{{ asset('svgs/icons8-facebook.svg') }}"/></a>
-                <a target="_blank" href="https://www.linkedin.com/in/nathan-pollaro/"><img src="{{ asset('svgs/icons8-linkedin.svg') }}"/></a>
-                <a target="_blank" href="https://github.com/Drusketh/"><img src="{{ asset('svgs/icons8-github.svg') }}"/></a>
-            </div>
-            <div class="flex text-center">
-                <span> Icons by <a target="_blank" href="https://icons8.com"> Icons8</a> </span>
+                <h2 class="text-3xl md:text-5xl font-bold">Get In Touch</h2>
+                <p class="mt-4 text-lg">Feel free to reach out for any inquiries</p>
             </div>
         </div>
     </section>
