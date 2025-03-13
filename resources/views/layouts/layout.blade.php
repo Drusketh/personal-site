@@ -31,7 +31,7 @@
 
     <footer class="flex relative w-full bg-gray-800 p-4 mt-20 items-center justify-center">
         <div class="flex flex-col">
-            <div class="flex flex-row p-12 gap-12 w-max justify-between items-center">
+            <div class="flex flex-row p-12 gap-6 w-max justify-between items-center">
                 <a target="_blank" href="https://www.instagram.com/nathan.pollaro/"><img src="{{ asset('svgs/icons8-instagram.svg') }}" class="invert"/></a>
                 <a target="_blank" href="https://www.facebook.com/nathan.pollaro/"><img src="{{ asset('svgs/icons8-facebook.svg') }}" class="invert"/></a>
                 <a target="_blank" href="https://www.linkedin.com/in/nathan-pollaro/"><img src="{{ asset('svgs/icons8-linkedin.svg') }}" class="invert"/></a>
