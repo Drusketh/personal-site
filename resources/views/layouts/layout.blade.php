@@ -36,7 +36,7 @@
                 <a target="_blank" href="https://www.facebook.com/nathan.pollaro/"><img src="{{ asset('svgs/icons8-facebook.svg') }}" class="invert"/></a>
                 <a target="_blank" href="https://www.linkedin.com/in/nathan-pollaro/"><img src="{{ asset('svgs/icons8-linkedin.svg') }}" class="invert"/></a>
                 <a target="_blank" href="https://github.com/Drusketh/"><img src="{{ asset('svgs/icons8-github.svg') }}" class="invert"/></a>
-                <span> Icons by <a target="_blank" href="https://icons8.com"> Icons8</a> </span>
+                <span class="max-sm:hidden"> Icons by <a target="_blank" href="https://icons8.com"> Icons8</a> </span>
             </div>
         </div>
     </footer>
