@@ -16,11 +16,19 @@
             
             <h2 class="text-3xl font-semibold mb-6">Overview</h2>
             <p class="text-lg leading-relaxed mb-8">
-                SphereNet is an economic assistant for an <a href="https://jerry.rhhscs.com/frontend"> online nation simulator </a> I play. The project was created with the 
+                SphereNet, or the <a href="https://petramsphere.com/">Petram Sphere</a>, was an economic assistant for an <a href="https://leagueofnations.net/"> 
+                    online nation simulator </a> I played. The project was created with the 
                 <a href="https://laravel.com/">Laravel</a> PHP framework, which compiles a language called <a href="https://bladelang.org/"> Blade</a> and PHP into a web page 
                 that includes JavaScript and CSS. The project was designed to help users make decisions on what to buy and sell in the game, as well as to help users track their 
                 progress in the game. It features a login system, user dashboard, chat window, and a battle simulator to give users an idea if their military is strong enough to 
                 engage in certain conflicts. This was mainly started to test my abilities in learning a web framework, and learning new skills in general.
+            </p>
+
+            </br>
+
+            <p class="text-lg leading-relaxed mb-8">
+                I began work on a second version of the project in March of 2025, but the game shut down shortly after, so the project was never completed.
+                The second version was also built with Laravel, but was much more feature filled and styled properly given everything I learned about Laravel and Tailwind.
             </p>
 
             <!-- Features Section -->
@@ -57,6 +65,15 @@
                     </div>
                     <div class="bg-gray-950 h-full relative border-2 border-solid border-black">
                         <img src="{{ asset('images/spherenet-4.png') }}" class="">
+                    </div>
+                    <div class="bg-gray-950 h-full relative border-2 border-solid border-black">
+                        <img src="{{ asset('images/spherenet-5.png') }}" class="">
+                    </div>
+                    <div class="bg-gray-950 h-full relative border-2 border-solid border-black">
+                        <img src="{{ asset('images/spherenet-6.png') }}" class="">
+                    </div>
+                    <div class="bg-gray-950 h-full relative border-2 border-solid border-black">
+                        <img src="{{ asset('images/spherenet-7.png') }}" class="">
                     </div>
                 </div>
             </div>

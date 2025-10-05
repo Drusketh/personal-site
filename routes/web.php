@@ -17,6 +17,10 @@ Route::get('/spherenet', function () {
     return view('spherenet');
 });
 
+Route::get('/site', function () {
+    return view('site');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

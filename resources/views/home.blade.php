@@ -47,12 +47,21 @@
                         <p>An economic assistant for an online nation simulator</p>
                     </div>
                 </div>
+                <div class="flex-1 p-12 bg-gray-850 h-full relative">
+                    <a target="_blank" href="./site">
+                        <img src="{{ asset('images/site.png') }}" class="mx-[-3rem] min-w-[calc(100%+6rem)] brightness-[0.6]">
+                    </a>
+                    <div class="absolute left-16 top-8 bg-[rgba(0,0,0,0.1)] h-min w-fit py-4 pl-3">
+                        <h2 class="text-3xl">Personal Website</h2>
+                        <p>My Portfolio</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section with Gradient Animation and Scrolling Effect -->
-    <section id="contact" class="h-fit flex flex-col items-center justify-center relative overflow-hidden">
+    <section id="contact" class="h-fit flex flex-col items-center justify-center relative overflow-hidden my-36">
         <div class="flex">
             <div class="text-center z-10">
                 <h2 class="text-3xl md:text-5xl font-bold">Get In Touch</h2>
