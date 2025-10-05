@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SiteController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -17,9 +18,7 @@ Route::get('/spherenet', function () {
     return view('spherenet');
 });
 
-Route::get('/site', function () {
-    return view('site');
-});
+Route::get('/site', [SiteController::class, 'index']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

@@ -34,6 +34,18 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="card">
+                <div class="mt-3">
+                    <p><strong>Lines of Code:</strong> {{ is_numeric($stats['lines']) ? number_format($stats['lines']) : $stats['lines'] }}</p>
+                    <p><strong>Total Files:</strong> {{ is_numeric($stats['files']) ? number_format($stats['files']) : $stats['files'] }}</p>
+                    <p><strong>Total Folders:</strong> {{ is_numeric($stats['folders']) ? number_format($stats['folders']) : $stats['folders'] }}</p>
+
+                    @if ($stats['updated_at'])
+                        <small class="text-muted">Last updated: {{ $stats['updated_at']->diffForHumans() }}</small>
+                    @endif
+                </div>
+            </div>
         </div>
     </section>
 @endsection
