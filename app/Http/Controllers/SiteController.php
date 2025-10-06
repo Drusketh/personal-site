@@ -8,12 +8,11 @@ class SiteController extends Controller
 {
     public function index()
     {
-        $stats = Cache::get('repo_stats', [
-            'lines' => 'Fetching…',
-            'files' => 'Fetching…',
-            'folders' => 'Fetching…',
-            'updated_at' => null,
-        ]);
+        if (Storage::disk('local')->exists('repo_stats.json')) {
+            $stats = json_decode(Storage::disk('local')->get('repo_stats.json'), true);
+        } else {
+            $stats = ['lines' => 'Fetching…', 'files' => 'Fetching…', 'folders' => 'Fetching…'];
+        }
         return view('site.index', compact('stats')); // Loads a view named 'users/index.blade.php'
     }
 }

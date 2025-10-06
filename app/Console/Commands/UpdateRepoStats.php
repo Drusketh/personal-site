@@ -90,12 +90,13 @@ class UpdateRepoStats extends Command
         // ------------------------------
         // 4. Store in cache
         // ------------------------------
-        Cache::put('psite_stats', [
-            'lines' => $totalLines,
+
+        Storage::disk('local')->put('psite_stats.json', json_encode([
+            'lines' => $lines,
             'files' => $fileCount,
             'folders' => $folderCount,
             'updated_at' => now(),
-        ], now()->addHours(12));
+        ], now()->addHours(12)));
 
         $this->info("Lines: {$totalLines}, Files: {$fileCount}, Folders: {$folderCount}");
     }
