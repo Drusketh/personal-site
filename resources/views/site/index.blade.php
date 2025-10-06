@@ -37,13 +37,14 @@
 
             <div class="card">
                 <div class="mt-3">
-                    <p><strong>Lines of Code:</strong> {{ is_numeric($stats['lines']) ? number_format($stats['lines']) : $stats['lines'] }}</p>
-                    <p><strong>Total Files:</strong> {{ is_numeric($stats['files']) ? number_format($stats['files']) : $stats['files'] }}</p>
-                    <p><strong>Total Folders:</strong> {{ is_numeric($stats['folders']) ? number_format($stats['folders']) : $stats['folders'] }}</p>
+                    <p>Total Lines of Code: {{ $stats['lines'] ?? 'N/A' }}</p>
+                    <p>Number of Files: {{ $stats['files'] ?? 'N/A' }}</p>
+                    <p>Number of Folders: {{ $stats['folders'] ?? 'N/A' }}</p>
 
-                    @if ($stats['updated_at'])
-                        <small class="text-muted">Last updated: {{ $stats['updated_at']->diffForHumans() }}</small>
+                    @if(!empty($stats['updated_at']))
+                        <p>Last Updated: {{ \Carbon\Carbon::parse($stats['updated_at'])->diffForHumans() }}</p>
                     @endif
+                </div>
                 </div>
             </div>
         </div>
