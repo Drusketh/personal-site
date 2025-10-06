@@ -30,18 +30,11 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/debug-cache', function () {
-    $key = 'repo_stats';
-
-    return response()->json([
-        'cache_driver' => config('cache.default'),
-        'cache_store' => config('cache.stores.' . config('cache.default')),
-        'exists' => Cache::has($key),
-        'value' => Cache::get($key),
-        'storage_path' => storage_path('framework/cache/data'),
-        'permissions' => substr(sprintf('%o', fileperms(storage_path('framework/cache'))), -4),
-        'env' => app()->environment(),
-    ]);
+Route::get('/debug-stats', function () {
+    if (Storage::disk('local')->exists('psite_stats.json')) {
+        return Storage::disk('local')->get('psite_stats.json');
+    }
+    return 'File not found.';
 });
 
 require __DIR__.'/auth.php';

@@ -99,6 +99,12 @@ class UpdateRepoStats extends Command
             'updated_at' => now(),
         ]));
 
+        \Log::info('Repo stats saved to:', [
+            'disk' => 'local',
+            'path' => 'repo_stats.json',
+            'exists' => Storage::disk('local')->exists('repo_stats.json'),
+        ]);
+
         $this->info("Lines: {$totalLines}, Files: {$fileCount}, Folders: {$folderCount}");
     }
 }

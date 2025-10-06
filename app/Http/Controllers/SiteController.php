@@ -9,8 +9,8 @@ class SiteController extends Controller
 {
     public function index()
     {
-        if (Storage::disk('local')->exists('repo_stats.json')) {
-            $stats = json_decode(Storage::disk('local')->get('repo_stats.json'), true);
+        if (Storage::disk('local')->exists('psite_stats.json')) {
+            $stats = json_decode(Storage::disk('local')->get('psite_stats.json'), true);
         } else {
             $stats = ['lines' => 'Fetching…', 'files' => 'Fetching…', 'folders' => 'Fetching…'];
         }
