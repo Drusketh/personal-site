@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-namespace App\Console\Commands;
 
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Storage;

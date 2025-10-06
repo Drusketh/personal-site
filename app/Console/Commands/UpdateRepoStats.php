@@ -93,11 +93,11 @@ class UpdateRepoStats extends Command
         // ------------------------------
 
         Storage::disk('local')->put('psite_stats.json', json_encode([
-            'lines' => $lines,
+            'lines' => $totalLines,
             'files' => $fileCount,
             'folders' => $folderCount,
             'updated_at' => now(),
-        ], now()->addHours(12)));
+        ]));
 
         $this->info("Lines: {$totalLines}, Files: {$fileCount}, Folders: {$folderCount}");
     }
