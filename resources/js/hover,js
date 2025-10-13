@@ -1,0 +1,38 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const listItems = document.querySelectorAll('ul > li.relative');
+
+    listItems.forEach(item => {
+        const popup = item.querySelector('div.absolute');
+        let hideTimeout;
+
+        // Show popup on hover
+        item.addEventListener('mouseenter', () => {
+            clearTimeout(hideTimeout);
+            popup.classList.remove('opacity-0', 'scale-95', 'pointer-events-none');
+            popup.classList.add('opacity-100', 'scale-100');
+        });
+
+        // Hide popup when leaving the item (with slight delay)
+        item.addEventListener('mouseleave', () => {
+            hideTimeout = setTimeout(() => {
+                popup.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
+                popup.classList.remove('opacity-100', 'scale-100');
+            }, 150);
+        });
+
+        // Keep popup visible when hovered
+        popup.addEventListener('mouseenter', () => {
+            clearTimeout(hideTimeout);
+            popup.classList.remove('opacity-0', 'scale-95', 'pointer-events-none');
+            popup.classList.add('opacity-100', 'scale-100');
+        });
+
+        // Hide popup when leaving popup area
+        popup.addEventListener('mouseleave', () => {
+            hideTimeout = setTimeout(() => {
+                popup.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
+                popup.classList.remove('opacity-100', 'scale-100');
+            }, 150);
+        });
+    });
+});

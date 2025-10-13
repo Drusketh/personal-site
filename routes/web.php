@@ -17,6 +17,9 @@ Route::get('/sterling', function () {
 Route::get('/spherenet', function () {
     return view('spherenet');
 });
+Route::get('/experience', function () {
+    return view('experience');
+});
 
 Route::get('/site', [SiteController::class, 'index']);
 

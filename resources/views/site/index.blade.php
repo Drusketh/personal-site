@@ -11,14 +11,15 @@
             </div>
 
             <div class="w-[80%] pb-8 items-center justify-center mx-auto">
-                <img src="{{ asset('images/spherenet.png') }}" class="mx-[-3rem] my-[5rem] min-w-[calc(100%+6rem)] brightness-[1]">
+                <img src="{{ asset('images/site.png') }}" class="mx-[-3rem] my-[5rem] min-w-[calc(100%+6rem)] brightness-[1]">
             </div>
             
             <h2 class="text-3xl font-semibold mb-6">Overview</h2>
             <p class="text-lg leading-relaxed mb-8">
                 This website was made in the same way as SphereNet, using the 
-                <a href="https://laravel.com/">Laravel</a> PHP framework, but has a much more harmonious design and homogenous styling than it given all that I learned while making SphereNet V1 and 2.
-                I started designing this site in March of this year at the reccomendation of a friend in IT, and it has been a very rewarding project to work on. 
+                <a href="https://laravel.com/">Laravel</a> PHP framework and TailwindCSS for class based styling, but has a much more harmonious design and homogenous styling than
+                 it given all that I learned while making SphereNet V1 and 2. I started designing this site in March of this year at the reccomendation of a friend in IT, 
+                 and it has been a very rewarding project to work on, and has allowed me to learn many new things that Laravel is capable of.
             </p>
 
             <!-- Features Section -->

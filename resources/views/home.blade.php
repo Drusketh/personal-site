@@ -11,6 +11,15 @@
         <div class="absolute inset-0 bg-[url('../../public/images/background.jpg')] bg-no-repeat bg-center bg-cover bg-fixed opacity-20"></div>
     </section>
 
+    <section id="experience" class="h-max flex flex-col items-center justify-center bg-gray-900 relative overflow-hidden">
+        <div class="flex">
+            <div class="text-center z-10 pt-24 lg:pb-24">
+                <h2 class="text-3xl md:text-5xl font-bold animate-slide-up">My Story and Skills</h2>
+                <p class="mt-4 text-lg animate-slide-up">My Favorite Projects to date.</p>
+            </div>
+        </div>
+    </section>
+
     <section id="portfolio" class="h-max flex flex-col items-center justify-center bg-gray-900 relative overflow-hidden">
         <div class="flex">
             <div class="text-center z-10 pt-24 lg:pb-24">
