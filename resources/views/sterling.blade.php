@@ -2,8 +2,6 @@
 
 @section('content')
     <section class="h-auto w-full bg-gradient-to-b from-gray-800 to-gray-900 relative">
-
-        <!-- Item Details -->
         <div class="container mx-auto px-6 md:px-40 py-12">
             <div class="text-center z-10">
                 <h1 class="text-5xl md:text-7xl font-bold text-white animate-fade-in">SSC Sterling</h1>
@@ -21,7 +19,6 @@
                 It it built off of a 1957 VW Beetle floorpan that was dropped 4" courtesy of Sun West Engineering. 
             </p>
 
-            <!-- Features Section -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">
                 <div>
                     <h3 class="text-2xl font-semibold mb-4">Skills Used</h3>

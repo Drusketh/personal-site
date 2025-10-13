@@ -18,27 +18,27 @@
         <nav class="container mx-auto flex justify-between items-center">
             <div><a href="./#about" class="text-xl font-bold text-gray-100">Nathan Pollaro</a></div>
             <ul class="flex space-x-6">
-                <li><a href="./#about" class="text-gray-100 hover:text-gray-400">About</a></li>
+                <li><a href="./experience" class="text-gray-100 hover:text-gray-400">About</a></li>
                 <li><a href="./#portfolio" class="text-gray-100 hover:text-gray-400">Portfolio</a></li>
                 <li><a href="./#contact" class="text-gray-100 hover:text-gray-400">Contact</a></li>
             </ul>
         </nav>
     </header>
     
-    <div class="pt-16">
+    <div class="pt-16 h-full">
         @yield('content')
     </div>
 
-    <footer class="flex relative w-full bg-gray-800 p-4 mt-20 items-center justify-center">
+    <footer class="flex relative w-full bg-gray-800 p-4 mt-20 justify-center">
         <div class="flex flex-col">
             <div class="flex flex-row p-12 gap-6 w-max justify-between items-center">
                 <a target="_blank" href="https://www.instagram.com/nathan.pollaro/"><img src="{{ asset('svgs/icons8-instagram.svg') }}" class="invert"/></a>
                 <a target="_blank" href="https://www.facebook.com/nathan.pollaro/"><img src="{{ asset('svgs/icons8-facebook.svg') }}" class="invert"/></a>
                 <a target="_blank" href="https://www.linkedin.com/in/nathan-pollaro/"><img src="{{ asset('svgs/icons8-linkedin.svg') }}" class="invert"/></a>
                 <a target="_blank" href="https://github.com/Drusketh/"><img src="{{ asset('svgs/icons8-github.svg') }}" class="invert"/></a>
-                <span class="max-sm:hidden"> Icons by <a target="_blank" href="https://icons8.com"> Icons8</a> </span>
             </div>
         </div>
+        <span class="absolute max-sm:hidden bottom-4 right-4"> Icons by <a target="_blank" href="https://icons8.com"> Icons8</a> </span>
     </footer>
 </body>
 </html>

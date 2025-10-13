@@ -1,8 +1,6 @@
-<!-- resources/views/home.blade.php -->
 @extends('layouts.layout')
 
 @section('content')
-    <!-- About Section with Animated Gradient Background -->
     <section id="about" class="h-screen flex items-center justify-center animate-gradient-x relative overflow-hidden">
         <div class="text-center z-10">
             <h1 class="text-4xl md:text-6xl font-bold animate-fade-in bg-clip-text">Welcome</h1>
@@ -69,7 +67,7 @@
         </div>
     </section>
 
-    <!-- Contact Section with Gradient Animation and Scrolling Effect -->
+
     <section id="contact" class="h-fit flex flex-col items-center justify-center relative overflow-hidden my-36">
         <div class="flex">
             <div class="text-center z-10">
