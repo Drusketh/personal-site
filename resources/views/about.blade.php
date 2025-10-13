@@ -2,10 +2,9 @@
 
 @section('content')
     <section class="h-auto w-full bg-gradient-to-b from-gray-800 to-gray-900 relative">
-        <div class="container mx-auto px-6 md:px-12 py-12">
+        <div class="container mx-auto px-6 md:px-12 pt-24">
             <div class="text-center z-10">
                 <h1 class="text-5xl md:text-7xl font-bold text-white animate-fade-in">My Experience</h1>
-                <p class="mt-4 text-lg animate-fade-in"></p>
             </div>
 
             <div class="w-[80%] pb-8 items-center justify-center mx-auto">
@@ -289,14 +288,19 @@
                     </ul>
                 </section>
             </div>
+                
+            <div class="p-8  rounded-xl text-gray-100 bg-gray-900/30 backdrop-blur-md">
+                <h2 class="text-4xl font-bold text-blue-400 mb-10">Hobbies</h2>
+                <p class="text-lg leading-relaxed mb-8">
+                    3D Printing
+                </p>
 
-            <p class="text-lg leading-relaxed mb-8">
-                I have experience in a variety of programming languages, CAD and Modelling programs, and Robotics.
+                <p class="text-lg leading-relaxed mb-8">
+                    Working on Cars
+                </p>
+            </div>
 
-                Below are some of the Languages and Programs I have experience with.
-            </p>
-
-            <section id="gallery">
+            <section id="gallery" class="p-8">
                 <div>
                     <h2 class="text-4xl font-bold text-blue-400 mb-10">Gallery</h2>
                     <p class="mt-4 text-lg animate-fade-in mb-6"></p>

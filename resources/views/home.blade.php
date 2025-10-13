@@ -9,71 +9,79 @@
         <div class="absolute inset-0 bg-[url('../../public/images/background.jpg')] bg-no-repeat bg-center bg-cover bg-fixed opacity-20"></div>
     </section>
 
-    <section id="experience" class="h-max flex flex-col items-center justify-center bg-gray-900 relative overflow-hidden">
-        <div class="flex">
-            <div class="text-center z-10 pt-24 lg:pb-24">
-                <h2 class="text-3xl md:text-5xl font-bold animate-slide-up">My Story and Skills</h2>
-                <p class="mt-4 text-lg animate-slide-up">My Favorite Projects to date.</p>
-            </div>
-        </div>
-    </section>
+    <div class="h-auto w-full bg-gradient-to-b from-gray-800 to-gray-900 relative">
+        <section id="experience" class="animate-fade-in h-auto flex flex-col items-center justify-center relative overflow-hidden">
+            <div class="flex">
+                <div class="text-center z-10 mt-24 lg:mb-24 p-8 bg-gray-800 rounded-xl">
+                    <h2 class="text-3xl md:text-5xl font-bold">An Introduction</h2>
 
-    <section id="portfolio" class="h-max flex flex-col items-center justify-center bg-gray-900 relative overflow-hidden">
-        <div class="flex">
-            <div class="text-center z-10 pt-24 lg:pb-24">
-                <h2 class="text-3xl md:text-5xl font-bold animate-slide-up">My Portfolio</h2>
-                <p class="mt-4 text-lg animate-slide-up">My Favorite Projects to date.</p>
-            </div>
-        </div>
-        <div class="flex p-12 h-[60%]">
-            <div class="flex flex-col lg:flex-row p-12 gap-12 w-screen justify-between items-center w-max">
-                <div class="flex-1 p-12 bg-gray-850 h-full relative">
-                    <a target="_blank" href="./quattro">
-                        <img src="{{ asset('images/quattro.png') }}" class="mx-[-3rem] my-[-5rem] min-w-[calc(100%+6rem)] brightness-[0.6]">
+                    <a href="/experience" class="mt-12 inline-flex px-8 py-4 rounded-xl bg-gradient-to-r from-sky-700 to-sky-500 text-white font-semibold text-lg shadow-lg 
+                                                 transition-all duration-300 transform hover:shadow-blue-900/50">
+                        <span class="relative z-10">Who I am, my skills, and my hobbies.</span>
                     </a>
-                    <div class="absolute left-16 top-8 bg-[rgba(0,0,0,0.1)] h-min w-fit py-4 pl-3">
-                        <h2 class="text-3xl">Audi Coupe Quattro</h2>
-                        <p>A Blender recreation of Audi's greatest creation</p>
-                    </div>
-                </div>
-                <div class="flex-1 p-12 bg-gray-850 h-full relative">
-                    <a target="_blank" href="./sterling">
-                        <img src="{{ asset('images/sterling.png') }}" class="mx-[-3rem] my-[-5rem] min-w-[calc(100%+6rem)] brightness-[0.7]">
-                    </a>
-                    <div class="absolute right-12 bottom-16 bg-[rgba(0,0,0,0.1)] h-min w-fit py-4 px-4 text-right">
-                        <h2 class="text-3xl">SSC Sterling</h2>
-                        <p>A Volkswagen-Based kit car</p>
-                    </div>
-                </div>
-                <div class="flex-1 p-12 bg-gray-850 h-full relative">
-                    <a target="_blank" href="./spherenet">
-                        <img src="{{ asset('images/spherenet.png') }}" class="mx-[-3rem] my-[-0rem] min-w-[calc(100%+6rem)] brightness-[0.7]">
-                    </a>
-                    <div class="absolute right-12 top-16 bg-[rgba(0,0,0,0.1)] h-min w-fit py-4 px-4 text-right">
-                        <h2 class="text-3xl">Petram Sphere</h2>
-                        <p>An economic assistant for an online nation simulator</p>
-                    </div>
-                </div>
-                <div class="flex-1 p-12 bg-gray-850 h-full relative">
-                    <a target="_blank" href="./site">
-                        <img src="{{ asset('images/site.png') }}" class="mx-[-3rem] min-w-[calc(100%+6rem)] brightness-[0.6]">
-                    </a>
-                    <div class="absolute left-16 top-8 bg-[rgba(0,0,0,0.1)] h-min w-fit py-4 pl-3">
-                        <h2 class="text-3xl">Personal Website</h2>
-                        <p>My Portfolio</p>
-                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-
-    <section id="contact" class="h-fit flex flex-col items-center justify-center relative overflow-hidden my-36">
-        <div class="flex">
-            <div class="text-center z-10">
-                <h2 class="text-3xl md:text-5xl font-bold">Get In Touch</h2>
-                <p class="mt-4 text-lg">Feel free to reach out for any inquiries</p>
+        <section id="portfolio" class="animate-fade-in h-auto flex flex-col items-center justify-center relative overflow-hidden">
+            <div class="flex mt-16 bg-gray-800 rounded-xl">
+                <div class="text-center z-10 p-8 lg:pb-8">
+                    <h2 class="text-3xl md:text-5xl font-bold">My Portfolio</h2>
+                    <p class="mt-4 text-lg">My Favorite Projects to date.</p>
+                </div>
             </div>
-        </div>
-    </section>
+            <div class="flex p-12 pb-32 h-[60%]">
+                <div class="flex flex-col lg:flex-row p-12 gap-12 w-screen justify-between items-center w-max">
+                    <div class="flex-1 p-12 h-full relative bg-gray-800 rounded-xl">
+                        <a href="./quattro">
+                            <img src="{{ asset('images/quattro.png') }}" class="px-8 mx-[-3rem] my-[-5rem] min-w-[calc(100%+6rem)] brightness-[0.6]">
+                        </a>
+                        <div class="absolute left-16 top-8 bg-[rgba(0,0,0,0.1)] h-min w-fit py-4 pl-3">
+                            <h2 class="text-3xl">Audi Coupe Quattro</h2>
+                            <p>A Blender recreation of Audi's greatest creation</p>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 p-12 h-full relative bg-gray-800 rounded-xl">
+                        <a href="./sterling">
+                            <img src="{{ asset('images/sterling.png') }}" class="mx-[-3rem] my-[-5rem] min-w-[calc(100%+6rem)] brightness-[0.7]">
+                        </a>
+                        <div class="absolute right-12 bottom-16 bg-[rgba(0,0,0,0.1)] h-min w-fit py-4 px-4 text-right">
+                            <h2 class="text-3xl">SSC Sterling</h2>
+                            <p>A Volkswagen-Based kit car</p>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 p-12 h-full relative bg-gray-800 rounded-xl">
+                        <a href="./spherenet">
+                            <img src="{{ asset('images/spherenet.png') }}" class="px-8 mx-[-3rem] min-w-[calc(100%+6rem)] brightness-[0.7]">
+                        </a>
+                        <div class="absolute right-12 top-16 bg-[rgba(0,0,0,0.1)] h-min w-fit py-4 px-4 text-right">
+                            <h2 class="text-3xl">Petram Sphere</h2>
+                            <p>An economic assistant for an online nation simulator</p>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 p-12 h-full relative bg-gray-800 rounded-xl">
+                        <a href="./site">
+                            <img src="{{ asset('images/site.png') }}" class="px-8 mx-[-3rem] min-w-[calc(100%+6rem)] brightness-[0.6]">
+                        </a>
+                        <div class="absolute left-16 bottom-8 bg-[rgba(0,0,0,0.1)] h-min w-fit py-4 pl-3">
+                            <h2 class="text-3xl">Personal Website</h2>
+                            <p>My Portfolio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="h-auto flex flex-col items-center justify-center relative overflow-hidden">
+            <div class="flex">
+                <div class="text-center z-10">
+                    <h2 class="animate-fade-in text-3xl md:text-5xl font-bold">Get In Touch</h2>
+                    <p class="animate-fade-in mt-4 text-lg">Feel free to reach out for any inquiries</p>
+                </div>
+            </div>
+        </section>
+    </div>
 @endsection
