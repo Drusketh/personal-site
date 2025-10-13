@@ -15,7 +15,7 @@
                 <div class="text-center z-10 mt-24 lg:mb-24 p-8 bg-gray-800 rounded-xl">
                     <h2 class="text-3xl md:text-5xl font-bold">An Introduction</h2>
 
-                    <a href="/experience" class="mt-12 inline-flex px-8 py-4 rounded-xl bg-gradient-to-r from-sky-700 to-sky-500 text-white font-semibold text-lg shadow-lg 
+                    <a href="/about" class="mt-12 inline-flex px-8 py-4 rounded-xl bg-gradient-to-r from-sky-700 to-sky-500 text-white font-semibold text-lg shadow-lg 
                                                  transition-all duration-300 transform hover:shadow-blue-900/50">
                         <span class="relative z-10">Who I am, my skills, and my hobbies.</span>
                     </a>
