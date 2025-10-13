@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Hover script loaded, found items:', listItems.length);
 
     listItems.forEach(item => {
-        const popup = item.querySelector('div.absolute');
+        const popup = item.querySelector('div.popup');
         let timer;
 
         // Show popup on hover
