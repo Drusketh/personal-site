@@ -1,20 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
     const listItems = document.querySelectorAll('ul > li.relative');
+    console.log('Hover script loaded, found items:', listItems.length);
 
     listItems.forEach(item => {
         const popup = item.querySelector('div.absolute');
-        let hideTimeout;
+        let timer;
 
         // Show popup on hover
         item.addEventListener('mouseenter', () => {
-            clearTimeout(hideTimeout);
+            clearTimeout(timer);
             popup.classList.remove('opacity-0', 'scale-95', 'pointer-events-none');
             popup.classList.add('opacity-100', 'scale-100');
         });
 
         // Hide popup when leaving the item (with slight delay)
         item.addEventListener('mouseleave', () => {
-            hideTimeout = setTimeout(() => {
+            timer = setTimeout(() => {
                 popup.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
                 popup.classList.remove('opacity-100', 'scale-100');
             }, 150);
@@ -22,14 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Keep popup visible when hovered
         popup.addEventListener('mouseenter', () => {
-            clearTimeout(hideTimeout);
+            clearTimeout(timer);
             popup.classList.remove('opacity-0', 'scale-95', 'pointer-events-none');
             popup.classList.add('opacity-100', 'scale-100');
         });
 
         // Hide popup when leaving popup area
         popup.addEventListener('mouseleave', () => {
-            hideTimeout = setTimeout(() => {
+            timer = setTimeout(() => {
                 popup.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
                 popup.classList.remove('opacity-100', 'scale-100');
             }, 150);

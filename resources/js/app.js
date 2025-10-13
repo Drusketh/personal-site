@@ -1,4 +1,5 @@
 import './bootstrap';
+import './hover';
 
 import Alpine from 'alpinejs';
 

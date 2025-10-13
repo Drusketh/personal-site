@@ -43,7 +43,7 @@
                         <span class="text-gray-400 text-sm">Intermediate</span>
 
                         <div class="absolute left-full ml-4 top-1/2 -translate-y-1/2 bg-gray-900 border border-blue-500 text-sm text-gray-200 rounded-lg p-4 w-64 opacity-0 scale-95 
-                                    group-hover:opacity-100 group-hover:scale-100 transition duration-300 pointer-events-auto z-20">
+                                    pointer-events-none opacity-0 scale-95 transition duration-300 z-20">
                             <p class="font-semibold text-blue-300 mb-1">Used in:</p>
                             <p class="mb-2"><a href="https://github.com/Drusketh/personal-site" target="_blank" class="text-blue-400 hover:underline">Portfolio website</a> 
                             built with Laravel 12 and TailwindCSS.</p>
@@ -57,7 +57,7 @@
                         <span class="text-gray-400 text-sm">Beginner</span>
 
                         <div class="absolute left-full ml-4 top-1/2 -translate-y-1/2 bg-gray-900 border border-blue-500 text-sm text-gray-200 rounded-lg p-4 w-64 opacity-0 scale-95 
-                                    group-hover:opacity-100 group-hover:scale-100 transition duration-300 pointer-events-auto z-20">
+                                    pointer-events-none opacity-0 scale-95 transition duration-300 z-20">
                             <p class="font-semibold text-blue-300 mb-1">Used in:</p>
                             <p class="mb-2"><a href="https://github.com/Drusketh/personal-site" target="_blank" class="text-blue-400 hover:underline">Portfolio website</a> 
                             built with Laravel 12 and TailwindCSS.</p>
@@ -71,7 +71,7 @@
                         <span class="text-gray-400 text-sm">Intermediate</span>
 
                         <div class="absolute left-full ml-4 top-1/2 -translate-y-1/2 bg-gray-900 border border-blue-500 text-sm text-gray-200 rounded-lg p-4 w-64 opacity-0 scale-95 
-                                    group-hover:opacity-100 group-hover:scale-100 transition duration-300 pointer-events-auto z-20">
+                                    pointer-events-none opacity-0 scale-95 transition duration-300 z-20">
                             <p class="font-semibold text-blue-300 mb-1">Used in:</p>
                             <p class="mb-2">AP Computer Science for Image Processing and other various  </p>
                         </div>
