@@ -27,7 +27,8 @@
             <div class="flex mt-16 bg-gray-800 rounded-xl">
                 <div class="text-center z-10 p-8 lg:pb-8">
                     <h2 class="text-3xl md:text-5xl font-bold">My Portfolio</h2>
-                    <p class="mt-4 text-lg">My Favorite Projects to date.</p>
+                    <p class="mt-4 text-lg">My Favorite Projects to date</p>
+                    <p class="mt-4 text-lg text-gray-600">Click an Image to read more</p>
                 </div>
             </div>
             <div class="flex p-12 pb-32 h-[60%]">
