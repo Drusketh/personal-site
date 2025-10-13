@@ -14,7 +14,7 @@
                 <!-- <img src="{{ asset('') }}" class="mx-[-3rem] my-[5rem] min-w-[calc(100%+6rem)] brightness-[1]"> -->
             </div>
             
-            <h2 class="text-3xl font-semibold mb-6">Overview</h2>
+            <h2 class="text-4xl font-bold text-blue-400 mb-10">Overview</h2>
             <p class="text-lg leading-relaxed mb-8">
                 Hello, my name is Nathan Pollaro, and I am a self-taught programmer, CAD designer, Blender Artist, and 3D Printing Enthusiast with a passion for learning 
                 new skills and technologies. I have experience in a variety of programming languages and frameworks, listed here:
@@ -38,34 +38,16 @@
                 <h2 class="text-4xl font-bold text-blue-400 mb-10">Programming Languages</h2>
 
                 <ul class="space-y-6 w-full max-w-lg">
-                    <li class="relative group flex items-center justify-between bg-gray-800 rounded-xl p-4 hover:bg-gray-700 transition duration-300 cursor-pointer">
-                        <span class="text-xl font-semibold text-blue-300">Laravel (framework)</span>
-                        <span class="text-gray-400 text-sm">Intermediate</span>
-
-                        <div class="popup block md:hidden bg-gray-900 border border-blue-500 text-sm text-gray-200 rounded-lg p-4 w-full mt-2 opacity-0 scale-95 
-                                    pointer-events-none transition duration-300">
-                            <p class="font-semibold text-blue-300 mb-1">Used in:</p>
-                            <p class="mb-2"><a href="https://github.com/Drusketh/personal-site" target="_blank" class="text-blue-400 hover:underline">Portfolio website</a> 
-                            built with Laravel 12 and TailwindCSS.</p>
-                            <p class="mb-2"><a href="https://github.com/Drusketh/spherenet" target="_blank" class="text-blue-400 hover:underline">Game assistant website</a> 
-                            built with Laravel 11 and TailwindCSS.</p>
+                    <li class="relative flex flex-col bg-gray-800 text-gray-200 hover:bg-gray-700 transition duration-300 rounded-xl cursor-pointer dropdown-item">
+                        <div class="flex justify-between items-center p-4">
+                            <div class="flex items-center space-x-2">
+                                <span class="arrow -rotate-90 transform transition-transform duration-300 text-sky-50">▼</span>
+                                <span class="text-xl font-semibold text-blue-300">Laravel (framework)</span>
+                            </div>
+                            <span class="text-gray-400 text-sm">Intermediate</span>
                         </div>
-                        <div class="popup md:absolute left-full ml-4 top-1/2 -translate-y-1/2 bg-gray-900 border border-blue-500 text-sm text-gray-200 rounded-lg p-4 w-64 opacity-0 scale-95 
-                                    pointer-events-none opacity-0 scale-95 transition duration-300 z-20">
-                            <p class="font-semibold text-blue-300 mb-1">Used in:</p>
-                            <p class="mb-2"><a href="https://github.com/Drusketh/personal-site" target="_blank" class="text-blue-400 hover:underline">Portfolio website</a> 
-                            built with Laravel 12 and TailwindCSS.</p>
-                            <p class="mb-2"><a href="https://github.com/Drusketh/spherenet" target="_blank" class="text-blue-400 hover:underline">Game assistant website</a> 
-                            built with Laravel 11 and TailwindCSS.</p>
-                        </div>
-                    </li>
 
-                    <li class="relative group flex items-center justify-between bg-gray-800 rounded-xl p-4 hover:bg-gray-700 transition duration-300 cursor-pointer">
-                        <span class="text-xl font-semibold text-blue-300">Blade</span>
-                        <span class="text-gray-400 text-sm">Beginner</span>
-
-                        <div class="absolute left-full ml-4 top-1/2 -translate-y-1/2 bg-gray-900 border border-blue-500 text-sm text-gray-200 rounded-lg p-4 w-64 opacity-0 scale-95 
-                                    pointer-events-none opacity-0 scale-95 transition duration-300 z-20">
+                        <div class="dropdown-content p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
                             <p class="font-semibold text-blue-300 mb-1">Used in:</p>
                             <p class="mb-2"><a href="https://github.com/Drusketh/personal-site" target="_blank" class="text-blue-400 hover:underline">Portfolio website</a> 
                             built with Laravel 12 and TailwindCSS.</p>
@@ -74,12 +56,34 @@
                         </div>
                     </li>
 
-                    <li class="relative group flex items-center justify-between bg-gray-800 rounded-xl p-4 hover:bg-gray-700 transition duration-300 cursor-pointer">
-                        <span class="text-xl font-semibold text-blue-300">Python</span>
-                        <span class="text-gray-400 text-sm">Intermediate</span>
+                    <li class="relative flex flex-col bg-gray-800 text-gray-200 hover:bg-gray-700 transition duration-300 rounded-xl cursor-pointer dropdown-item">
+                        <div class="flex justify-between items-center p-4">
+                            <div class="flex items-center space-x-2">
+                                <span class="arrow -rotate-90 transform transition-transform duration-300">▼</span>
+                                <span class="text-xl font-semibold text-blue-300">Blade</span>
+                            </div>
+                            <span class="text-gray-400 text-sm">Beginner</span>
+                        </div>
 
-                        <div class="absolute left-full ml-4 top-1/2 -translate-y-1/2 bg-gray-900 border border-blue-500 text-sm text-gray-200 rounded-lg p-4 w-64 opacity-0 scale-95 
-                                    pointer-events-none opacity-0 scale-95 transition duration-300 z-20">
+                        <div class="dropdown-content p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
+                            <p class="font-semibold text-blue-300 mb-1">Used in:</p>
+                            <p class="mb-2"><a href="https://github.com/Drusketh/personal-site" target="_blank" class="text-blue-400 hover:underline">Portfolio website</a> 
+                            built with Laravel 12 and TailwindCSS.</p>
+                            <p class="mb-2"><a href="https://github.com/Drusketh/spherenet" target="_blank" class="text-blue-400 hover:underline">Game assistant website</a> 
+                            built with Laravel 11 and TailwindCSS.</p>
+                        </div>
+                    </li>
+
+                    <li class="relative flex flex-col bg-gray-800 text-gray-200 hover:bg-gray-700 transition duration-300 rounded-xl cursor-pointer dropdown-item">
+                        <div class="flex justify-between items-center p-4">
+                            <div class="flex items-center space-x-2">
+                                <span class="arrow -rotate-90 transform transition-transform duration-300">▼</span>
+                                <span class="text-xl font-semibold text-blue-300">Python</span>
+                            </div>
+                            <span class="text-gray-400 text-sm">Intermediate</span>
+                        </div>
+
+                        <div class="dropdown-content p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
                             <p class="font-semibold text-blue-300 mb-1">Used in:</p>
                             <p class="mb-2">AP Computer Science for Image Processing and other various  </p>
                         </div>
@@ -113,10 +117,10 @@
             </div>
 
             <div>
-                <h2 class="text-3xl font-semibold mb-6">Gallery</h2>
+                <h2 class="text-4xl font-bold text-blue-400 mb-10">Gallery</h2>
                 <p class="mt-4 text-lg animate-fade-in mb-6"></p>
                 <div class="grid grid-cols-1 md:grid-cols-3 auto-rows-fr gap-3 p-12 items-center bg-gray-800">
-                    <div class="bg-gray-950 h-full relative border-2 border-solid border-black">
+                    <!-- <div class="bg-gray-950 h-full relative border-2 border-solid border-black">
                         <img src="{{ asset('images/spherenet.png') }}" class="absolute top-[25%]">
                     </div>
                     <div class="bg-gray-950 h-full relative border-2 border-solid border-black">
@@ -139,7 +143,7 @@
                     </div>
                     <div class="bg-gray-950 h-full relative border-2 border-solid border-black">
                         <img src="{{ asset('images/spherenet-7.png') }}" class="">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

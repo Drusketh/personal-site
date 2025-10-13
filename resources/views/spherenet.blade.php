@@ -14,7 +14,7 @@
                 <img src="{{ asset('images/spherenet.png') }}" class="mx-[-3rem] my-[5rem] min-w-[calc(100%+6rem)] brightness-[1]">
             </div>
             
-            <h2 class="text-3xl font-semibold mb-6">Overview</h2>
+            <h2 class="text-4xl font-bold text-blue-400 mb-10">Overview</h2>
             <p class="text-lg leading-relaxed mb-8">
                 SphereNet, or the <a href="https://petramsphere.com/">Petram Sphere</a>, was an economic assistant for an <a href="https://leagueofnations.net/"> 
                     online nation simulator </a> I played. The project was created with the 
@@ -48,7 +48,7 @@
             </div>
 
             <div>
-                <h2 class="text-3xl font-semibold mb-6">Gallery</h2>
+                <h2 class="text-4xl font-bold text-blue-400 mb-10">Gallery</h2>
                 <p class="mt-4 text-lg animate-fade-in mb-6"></p>
                 <div class="grid grid-cols-1 md:grid-cols-3 auto-rows-fr gap-3 p-12 items-center bg-gray-800">
                     <div class="bg-gray-950 h-full relative border-2 border-solid border-black">

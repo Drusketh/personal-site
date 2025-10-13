@@ -1,39 +1,20 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const listItems = document.querySelectorAll('ul > li.relative');
-    console.log('Hover script loaded, found items:', listItems.length);
+document.querySelectorAll('.dropdown-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const dropdown = item.querySelector('.dropdown-content');
+    const arrow = item.querySelector('.arrow');
+    console.log(dropdown);
 
-    listItems.forEach(item => {
-        const popup = item.querySelector('div.popup');
-        let timer;
+    // Toggle open/close
+    if (dropdown.classList.contains('opacity-0')) {
+        arrow.classList.remove('-rotate-90');
 
-        // Show popup on hover
-        item.addEventListener('mouseenter', () => {
-            clearTimeout(timer);
-            popup.classList.remove('opacity-0', 'scale-95', 'pointer-events-none');
-            popup.classList.add('opacity-100', 'scale-100');
-        });
+        dropdown.classList.add('opacity-100', 'max-h-96', 'pointer-events-auto', 'p-4', 'm-4', 'border');
+        dropdown.classList.remove('opacity-0', 'max-h-0', 'pointer-events-none', 'p-0', 'm-0');
+    } else {
+        arrow.classList.add('-rotate-90');
 
-        // Hide popup when leaving the item (with slight delay)
-        item.addEventListener('mouseleave', () => {
-            timer = setTimeout(() => {
-                popup.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
-                popup.classList.remove('opacity-100', 'scale-100');
-            }, 150);
-        });
-
-        // Keep popup visible when hovered
-        popup.addEventListener('mouseenter', () => {
-            clearTimeout(timer);
-            popup.classList.remove('opacity-0', 'scale-95', 'pointer-events-none');
-            popup.classList.add('opacity-100', 'scale-100');
-        });
-
-        // Hide popup when leaving popup area
-        popup.addEventListener('mouseleave', () => {
-            timer = setTimeout(() => {
-                popup.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
-                popup.classList.remove('opacity-100', 'scale-100');
-            }, 150);
-        });
-    });
+        dropdown.classList.add('opacity-0', 'max-h-0', 'pointer-events-none', 'p-0', 'm-0');
+        dropdown.classList.remove('opacity-100', 'max-h-96', 'pointer-events-auto', 'p-4', 'm-4', 'border');
+    }
+  });
 });
