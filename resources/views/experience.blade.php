@@ -42,7 +42,8 @@
                         <span class="text-xl font-semibold text-blue-300">Laravel (framework)</span>
                         <span class="text-gray-400 text-sm">Intermediate</span>
 
-                        <div class="absolute left-full ml-4 top-1/2 -translate-y-1/2 bg-gray-900 border border-blue-500 text-sm text-gray-200 rounded-lg p-4 w-64 opacity-0 scale-95 
+                        <div class="absolute top-full mt-2 left-1/2 -translate-x-1/2
+md:left-full md:ml-4 md:top-1/2 md:-translate-y-1/2 md:translate-x-0 bg-gray-900 border border-blue-500 text-sm text-gray-200 rounded-lg p-4 w-64 opacity-0 scale-95 
                                     pointer-events-none opacity-0 scale-95 transition duration-300 z-20">
                             <p class="font-semibold text-blue-300 mb-1">Used in:</p>
                             <p class="mb-2"><a href="https://github.com/Drusketh/personal-site" target="_blank" class="text-blue-400 hover:underline">Portfolio website</a> 
