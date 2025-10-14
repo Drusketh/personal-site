@@ -18,7 +18,7 @@
         <nav class="container mx-auto flex justify-between items-center">
             <div><a href="./#about" class="text-xl font-bold text-gray-100">Nathan Pollaro</a></div>
             <ul class="flex space-x-6">
-                <li><a href="./experience" class="text-gray-100 hover:text-gray-400">About</a></li>
+                <li><a href="./about" class="text-gray-100 hover:text-gray-400">About</a></li>
                 <li><a href="./#portfolio" class="text-gray-100 hover:text-gray-400">Portfolio</a></li>
                 <li><a href="./#contact" class="text-gray-100 hover:text-gray-400">Contact</a></li>
             </ul>

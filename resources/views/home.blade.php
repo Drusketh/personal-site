@@ -12,13 +12,23 @@
     <div class="h-auto w-full bg-gradient-to-b from-gray-800 to-gray-900 relative">
         <section id="experience" class="animate-fade-in h-auto flex flex-col items-center justify-center relative overflow-hidden">
             <div class="flex">
-                <div class="text-center z-10 mt-24 lg:mb-24 p-8 bg-gray-800 rounded-xl">
+                <div class="text-center z-10 mt-24 lg:mb-12 p-8 bg-gray-800 rounded-xl">
                     <h2 class="text-3xl md:text-5xl font-bold">An Introduction</h2>
+                </div>
+            </div>
 
-                    <a href="/about" class="mt-12 inline-flex px-8 py-4 rounded-xl bg-gradient-to-r from-sky-700 to-sky-500 text-white font-semibold text-lg shadow-lg 
+            <div class="flex">
+                <div class="relative text-center z-10 lg:mb-24 mx-32 p-8 pb-32 md:pb-24 bg-gray-800 rounded-xl">
+                        <p class="mt-4 text-lg">
+                            Hello! I am a self-taught programmer, CAD designer, Blender Artist, and 3D Printing Enthusiast with a passion for learning 
+                            new skills and technologies. I have 9 years of amateur programming experience and 4 years of intense CAD experience. If you'd like to learn more about my 
+                            skills, software & language competency, and my hobbies, please click the button to visit my experience page.
+                        </p>
+
+                        <a href="/about" class="absolute bottom-4 right-4 mt-12 inline-flex px-8 py-4 rounded-xl bg-gradient-to-r from-sky-700 to-sky-500 text-white font-semibold text-lg shadow-lg 
                                             transition-all duration-300 transform hover:shadow-blue-900/50">
-                        <span class="relative z-10">Who I am, my skills, and my hobbies.</span>
-                    </a>
+                            <span class="relative z-10"> Read more.</span>
+                        </a>
                 </div>
             </div>
         </section>

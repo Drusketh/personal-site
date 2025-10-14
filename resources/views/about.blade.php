@@ -35,20 +35,26 @@
 
             <div class="flex flex-col lg:flex-row gap-12 p-8 mt-8 w-full justify-between items-start rounded-xl bg-gray-900/30 backdrop-blur-md">
                 <section id="languagelist" class="min-h-auto p-8 mb-16 text-white flex flex-col items-start rounded-xl bg-white/5 backdrop-blur-md border border-white/20">
-                    <h2 class="text-4xl font-bold text-blue-400 mb-10">Programming Languages</h2>
+                    <div class="flex flex-row gap-6 w-full justify-between">
+                        <h2 class="text-3xl font-bold text-blue-400 mb-10">Programming Languages</h2>
+
+                        <button id="toggle-lang" class="h-fit px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition">
+                            Expand All
+                        </button>
+                    </div>
 
                     <ul class="space-y-6 w-full max-w-lg">
                         <!-- Laravel -->
                         <li class="relative flex flex-col border border-white/20 bg-gray-900 hover:bg-gray-700 text-gray-100 transition duration-300 rounded-xl cursor-pointer dropdown-item">
                             <div class="flex justify-between items-center p-4">
                                 <div class="flex items-center space-x-2">
-                                    <span class="arrow -rotate-90 transform transition-transform duration-300 text-sky-50">▼</span>
+                                    <span class="arrow lang -rotate-90 transform transition-transform duration-300 text-sky-50">▼</span>
                                     <span class="text-xl font-semibold text-blue-100">Laravel (framework)</span>
                                 </div>
                                 <span class="text-gray-400 text-sm">Intermediate</span>
                             </div>
 
-                            <div class="dropdown-content p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
+                            <div class="dropdown-content lang p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
                                 <p class="font-semibold text-blue-300 mb-1">Used in:</p>
                                 <p class="mb-2"><a href="https://github.com/Drusketh/personal-site" target="_blank" class="text-blue-400 hover:underline">Portfolio website</a> 
                                 built with Laravel 12 and TailwindCSS.</p>
@@ -61,13 +67,13 @@
                         <li class="relative flex flex-col border border-white/20 bg-gray-900 hover:bg-gray-700 text-gray-100 transition duration-300 rounded-xl cursor-pointer dropdown-item">
                             <div class="flex justify-between items-center p-4">
                                 <div class="flex items-center space-x-2">
-                                    <span class="arrow -rotate-90 transform transition-transform duration-300">▼</span>
+                                    <span class="arrow lang -rotate-90 transform transition-transform duration-300">▼</span>
                                     <span class="text-xl font-semibold text-blue-100">Blade</span>
                                 </div>
                                 <span class="text-gray-400 text-sm">Beginner</span>
                             </div>
 
-                            <div class="dropdown-content p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
+                            <div class="dropdown-content lang p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
                                 <p class="font-semibold text-blue-300 mb-1">Used in:</p>
                                 <p class="mb-2"><a href="https://github.com/Drusketh/personal-site" target="_blank" class="text-blue-400 hover:underline">Portfolio website</a> 
                                 built with Laravel 12 and TailwindCSS.</p>
@@ -80,13 +86,13 @@
                         <li class="relative flex flex-col border border-white/20 bg-gray-900 hover:bg-gray-700 text-gray-100 transition duration-300 rounded-xl cursor-pointer dropdown-item">
                             <div class="flex justify-between items-center p-4">
                                 <div class="flex items-center space-x-2">
-                                    <span class="arrow -rotate-90 transform transition-transform duration-300">▼</span>
+                                    <span class="arrow lang -rotate-90 transform transition-transform duration-300">▼</span>
                                     <span class="text-xl font-semibold text-blue-100">PHP</span>
                                 </div>
                                 <span class="text-gray-400 text-sm">Intermediate</span>
                             </div>
 
-                            <div class="dropdown-content p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
+                            <div class="dropdown-content lang p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
                                 <p class="font-semibold text-blue-300 mb-1">Used in:</p>
                                 <p class="mb-2"><a href="https://github.com/Drusketh/spherenet" target="_blank" class="text-blue-400 hover:underline">Game assistant website</a> 
                                 built with Laravel 11 and TailwindCSS.</p>
@@ -101,13 +107,13 @@
                         <li class="relative flex flex-col border border-white/20 bg-gray-900 hover:bg-gray-700 text-gray-100 transition duration-300 rounded-xl cursor-pointer dropdown-item">
                             <div class="flex justify-between items-center p-4">
                                 <div class="flex items-center space-x-2">
-                                    <span class="arrow -rotate-90 transform transition-transform duration-300">▼</span>
+                                    <span class="arrow lang -rotate-90 transform transition-transform duration-300">▼</span>
                                     <span class="text-xl font-semibold text-blue-100">HTML</span>
                                 </div>
                                 <span class="text-gray-400 text-sm">Advanced</span>
                             </div>
 
-                            <div class="dropdown-content p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
+                            <div class="dropdown-content lang p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
                                 <p class="font-semibold text-blue-300 mb-1">Used in:</p>
                                 <p class="mb-2">All of my web based projects</p>
                             </div>
@@ -117,13 +123,13 @@
                         <li class="relative flex flex-col border border-white/20 bg-gray-900 hover:bg-gray-700 text-gray-100 transition duration-300 rounded-xl cursor-pointer dropdown-item">
                             <div class="flex justify-between items-center p-4">
                                 <div class="flex items-center space-x-2">
-                                    <span class="arrow -rotate-90 transform transition-transform duration-300">▼</span>
+                                    <span class="arrow lang -rotate-90 transform transition-transform duration-300">▼</span>
                                     <span class="text-xl font-semibold text-blue-100">JavaScript</span>
                                 </div>
                                 <span class="text-gray-400 text-sm">Beginner</span>
                             </div>
 
-                            <div class="dropdown-content p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
+                            <div class="dropdown-content lang p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
                                 <p class="font-semibold text-blue-300 mb-1">Used in:</p>
                                 <p class="mb-2">Middle School and High School for CS classes</p>
                                 <p class="mb-2">All of my web based projects</p>
@@ -134,13 +140,13 @@
                         <li class="relative flex flex-col border border-white/20 bg-gray-900 hover:bg-gray-700 text-gray-100 transition duration-300 rounded-xl cursor-pointer dropdown-item">
                             <div class="flex justify-between items-center p-4">
                                 <div class="flex items-center space-x-2">
-                                    <span class="arrow -rotate-90 transform transition-transform duration-300">▼</span>
+                                    <span class="arrow lang -rotate-90 transform transition-transform duration-300">▼</span>
                                     <span class="text-xl font-semibold text-blue-100">Expression 2</span>
                                 </div>
                                 <span class="text-gray-400 text-sm">Advanced</span>
                             </div>
 
-                            <div class="dropdown-content p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
+                            <div class="dropdown-content lang p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
                                 <p class="font-semibold text-blue-300 mb-1">Used in:</p>
                                 <p class="mb-2">A scripting language in a game. Over 9 years of playing I made 825 scripts for various things, totaling 55,628 lines of code.</p>
                             </div>
@@ -150,13 +156,13 @@
                         <li class="relative flex flex-col border border-white/20 bg-gray-900 hover:bg-gray-700 text-gray-100 transition duration-300 rounded-xl cursor-pointer dropdown-item">
                             <div class="flex justify-between items-center p-4">
                                 <div class="flex items-center space-x-2">
-                                    <span class="arrow -rotate-90 transform transition-transform duration-300">▼</span>
+                                    <span class="arrow lang -rotate-90 transform transition-transform duration-300">▼</span>
                                     <span class="text-xl font-semibold text-blue-100">Python</span>
                                 </div>
                                 <span class="text-gray-400 text-sm">Intermediate</span>
                             </div>
 
-                            <div class="dropdown-content p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
+                            <div class="dropdown-content lang p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
                                 <p class="font-semibold text-blue-300 mb-1">Used in:</p>
                                 <p class="mb-2">AP Computer Science for Image Processing and other various  </p>
                             </div>
@@ -166,13 +172,13 @@
                         <li class="relative flex flex-col border border-white/20 bg-gray-900 hover:bg-gray-700 text-gray-100 transition duration-300 rounded-xl cursor-pointer dropdown-item">
                             <div class="flex justify-between items-center p-4">
                                 <div class="flex items-center space-x-2">
-                                    <span class="arrow -rotate-90 transform transition-transform duration-300">▼</span>
+                                    <span class="arrow lang -rotate-90 transform transition-transform duration-300">▼</span>
                                     <span class="text-xl font-semibold text-blue-100">Lua</span>
                                 </div>
                                 <span class="text-gray-400 text-sm">Beginner</span>
                             </div>
 
-                            <div class="dropdown-content p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
+                            <div class="dropdown-content lang p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
                                 <p class="font-semibold text-blue-300 mb-1">Used in:</p>
                                 <p class="mb-2">Writing custom addons for Garry's Mod, the same game where Expression 2 was used.</p>
                             </div>
@@ -182,20 +188,26 @@
                 </section>
 
                 <section id="cadlist" class="min-h-auto p-8 mb-16 text-white flex flex-col items-start rounded-xl bg-white/5 backdrop-blur-md border border-white/20">
-                    <h2 class="text-4xl font-bold text-blue-400 mb-10">Design Software</h2>
+                    <div class="flex flex-row gap-6 w-full justify-between">
+                        <h2 class="text-3xl font-bold text-blue-400 mb-10">Design Software</h2>
+
+                        <button id="toggle-cad" class="h-fit px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold  rounded-lg transition">
+                            Expand All
+                        </button>
+                    </div>
 
                     <ul class="space-y-6 w-full max-w-lg">
                         <!-- SolidWorks -->
                         <li class="relative flex flex-col border border-white/20 bg-gray-900 hover:bg-gray-700 text-gray-100 transition duration-300 rounded-xl cursor-pointer dropdown-item">
                             <div class="flex justify-between items-center p-4">
                                 <div class="flex items-center space-x-2">
-                                    <span class="arrow -rotate-90 transform transition-transform duration-300 text-sky-50">▼</span>
+                                    <span class="arrow cad -rotate-90 transform transition-transform duration-300 text-sky-50">▼</span>
                                     <span class="text-xl font-semibold text-blue-100">SolidWorks</span>
                                 </div>
                                 <span class="text-gray-400 text-sm">Intermediate</span>
                             </div>
 
-                            <div class="dropdown-content p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
+                            <div class="dropdown-content cad p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
                                 <p class="font-semibold text-blue-300 mb-1">Time:</p><p class="mb-2">Used for last 4 Years</p>
                                 <p class="font-semibold text-blue-300 mb-1">Notes:</p><p class="mb-2">I have received my CSWA, it is also my favorite and most used CAD program.</p>
                             </div>
@@ -205,13 +217,13 @@
                         <li class="relative flex flex-col border border-white/20 bg-gray-900 hover:bg-gray-700 text-gray-100 transition duration-300 rounded-xl cursor-pointer dropdown-item">
                             <div class="flex justify-between items-center p-4">
                                 <div class="flex items-center space-x-2">
-                                    <span class="arrow -rotate-90 transform transition-transform duration-300">▼</span>
+                                    <span class="arrow cad -rotate-90 transform transition-transform duration-300">▼</span>
                                     <span class="text-xl font-semibold text-blue-100">AutoDesk Inventor</span>
                                 </div>
                                 <span class="text-gray-400 text-sm">Intermediate</span>
                             </div>
 
-                            <div class="dropdown-content p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
+                            <div class="dropdown-content cad p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
                                 <p class="font-semibold text-blue-300 mb-1">Time:</p><p class="mb-2">Used for 4 Years daily in High School</p>
                                 <p class="font-semibold text-blue-300 mb-1">Notes:</p><p class="mb-2">This was my CAD software of choice for VEX Robotics and all school assignments.</p>
                             </div>
@@ -221,13 +233,13 @@
                         <li class="relative flex flex-col border border-white/20 bg-gray-900 hover:bg-gray-700 text-gray-100 transition duration-300 rounded-xl cursor-pointer dropdown-item">
                             <div class="flex justify-between items-center p-4">
                                 <div class="flex items-center space-x-2">
-                                    <span class="arrow -rotate-90 transform transition-transform duration-300">▼</span>
+                                    <span class="arrow cad -rotate-90 transform transition-transform duration-300">▼</span>
                                     <span class="text-xl font-semibold text-blue-100">Blender</span>
                                 </div>
                                 <span class="text-gray-400 text-sm">Intermediate</span>
                             </div>
 
-                            <div class="dropdown-content p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
+                            <div class="dropdown-content cad p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
                                 <p class="font-semibold text-blue-300 mb-1">Time:</p><p class="mb-2">Used infrequently for 9 years</p>
                                 <p class="font-semibold text-blue-300 mb-1">Notes:</p><p class="mb-2">This is my favorite software for anything that is organic, complex, or 
                                     sculpting related. This is also my choice software for editing STL files as it is possible to stay dimensionally accurate.
@@ -239,13 +251,13 @@
                         <li class="relative flex flex-col border border-white/20 bg-gray-900 hover:bg-gray-700 text-gray-100 transition duration-300 rounded-xl cursor-pointer dropdown-item">
                             <div class="flex justify-between items-center p-4">
                                 <div class="flex items-center space-x-2">
-                                    <span class="arrow -rotate-90 transform transition-transform duration-300">▼</span>
+                                    <span class="arrow cad -rotate-90 transform transition-transform duration-300">▼</span>
                                     <span class="text-xl font-semibold text-blue-100">FreeCAD</span>
                                 </div>
                                 <span class="text-gray-400 text-sm">Beginner</span>
                             </div>
 
-                            <div class="dropdown-content p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
+                            <div class="dropdown-content cad p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
                                 <p class="font-semibold text-blue-300 mb-1">Time:</p><p class="mb-2">3 months</p>
                                 <p class="font-semibold text-blue-300 mb-1">Notes:</p><p class="mb-2">Since my SolidWorks License is not permanent, this has been my main focus for 
                                     learning and modelling. It still has some bugs that make it diffucult to use, but it has proven to be a worthy replacement.</p>
@@ -256,13 +268,13 @@
                         <li class="relative flex flex-col border border-white/20 bg-gray-900 hover:bg-gray-700 text-gray-100 transition duration-300 rounded-xl cursor-pointer dropdown-item">
                             <div class="flex justify-between items-center p-4">
                                 <div class="flex items-center space-x-2">
-                                    <span class="arrow -rotate-90 transform transition-transform duration-300">▼</span>
+                                    <span class="arrow cad -rotate-90 transform transition-transform duration-300">▼</span>
                                     <span class="text-xl font-semibold text-blue-100">OpenSCAD</span>
                                 </div>
                                 <span class="text-gray-400 text-sm">Beginner</span>
                             </div>
 
-                            <div class="dropdown-content p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
+                            <div class="dropdown-content cad p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
                                 <p class="font-semibold text-blue-300 mb-1">Used for:</p><p class="mb-2">1 project</p>
                                 <p class="font-semibold text-blue-300 mb-1">Notes:</p><p class="mb-2">I have used this for a single 3D Printing project, but it seems very powerful 
                                     for parametric models, and it is "code" based.</p>
@@ -273,13 +285,13 @@
                         <li class="relative flex flex-col border border-white/20 bg-gray-900 hover:bg-gray-700 text-gray-100 transition duration-300 rounded-xl cursor-pointer dropdown-item">
                             <div class="flex justify-between items-center p-4">
                                 <div class="flex items-center space-x-2">
-                                    <span class="arrow -rotate-90 transform transition-transform duration-300">▼</span>
+                                    <span class="arrow cad -rotate-90 transform transition-transform duration-300">▼</span>
                                     <span class="text-xl font-semibold text-blue-100">Fusion 360</span>
                                 </div>
                                 <span class="text-gray-400 text-sm">Beginner</span>
                             </div>
 
-                            <div class="dropdown-content p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
+                            <div class="dropdown-content cad p-0 m-0 opacity-0 bg-gray-900 border-blue-500 rounded-lg text-sm text-gray-200 max-h-0 overflow-hidden">
                                 <p class="font-semibold text-blue-300 mb-1">Time:</p><p class="mb-2">1 week</p>
                                 <p class="font-semibold text-blue-300 mb-1">Notes:</p><p class="mb-2">I used it when abroad with a laptop. It was confusing to adapt to, 
                                     but I was able to design what was needed in a timely fashion.</p>
