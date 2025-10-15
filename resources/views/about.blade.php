@@ -346,38 +346,35 @@
                 </p>
             </div>
 
-            <section id="gallery" class="p-8">
-                <div>
-                    <h2 class="text-4xl font-bold text-blue-400 mb-10">Gallery</h2>
-                    <p class="mt-4 text-lg animate-fade-in mb-6"></p>
-                    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 auto-rows-fr gap-3 p-12 items-center bg-gray-800">
-                        <a href="/images/CSWA.png" class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
-                            <img src="{{ asset('images/CSWA.png') }}" class="my-auto">
-                        </a>
-                        {{-- <a class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
-                            <img src="{{ asset('images/spherenet-1.png') }}" class="my-auto">
-                        </a>
-                        <a class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
-                            <img src="{{ asset('images/spherenet-2.png') }}" class="my-auto">
-                        </a>
-                        <a class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
-                            <img src="{{ asset('images/spherenet-3.png') }}" class="my-auto">
-                        </a>
-                        <a class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
-                            <img src="{{ asset('images/spherenet-4.png') }}" class="my-auto">
-                        </a>
-                        <a class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
-                            <img src="{{ asset('images/spherenet-5.png') }}" class="my-auto">
-                        </a>
-                        <a class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
-                            <img src="{{ asset('images/spherenet-6.png') }}" class="my-auto">
-                        </a>
-                        <a class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
-                            <img src="{{ asset('images/spherenet-7.png') }}" class="my-auto">
-                        </a> --}}
-                    </div>
+            <div class="bg-gray-800 rounded-xl p-8">
+                <h2 class="text-4xl font-bold text-blue-400 mb-10">Gallery</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3 m-4 p-8 items-center bg-gray-900 border border-blue-500 rounded-xl">
+                    <a href="/images/CSWA.png" class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
+                        <img src="{{ asset('images/CSWA.png') }}" class="my-auto">
+                    </a>
+                    {{-- <a class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
+                        <img src="{{ asset('images/spherenet-1.png') }}" class="my-auto">
+                    </a>
+                    <a class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
+                        <img src="{{ asset('images/spherenet-2.png') }}" class="my-auto">
+                    </a>
+                    <a class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
+                        <img src="{{ asset('images/spherenet-3.png') }}" class="my-auto">
+                    </a>
+                    <a class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
+                        <img src="{{ asset('images/spherenet-4.png') }}" class="my-auto">
+                    </a>
+                    <a class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
+                        <img src="{{ asset('images/spherenet-5.png') }}" class="my-auto">
+                    </a>
+                    <a class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
+                        <img src="{{ asset('images/spherenet-6.png') }}" class="my-auto">
+                    </a>
+                    <a class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
+                        <img src="{{ asset('images/spherenet-7.png') }}" class="my-auto">
+                    </a> --}}
                 </div>
-            </section>  
+            </div> 
         </div>
     </section>
 @endsection
