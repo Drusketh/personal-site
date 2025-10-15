@@ -25,8 +25,8 @@
                             skills, software & language competency, and my hobbies, please click the button to visit my experience page.
                         </p>
 
-                        <a href="/about" class="absolute bottom-4 right-4 mt-12 inline-flex px-8 py-4 rounded-xl bg-gradient-to-r from-sky-700 to-sky-500 text-white font-semibold text-lg shadow-lg 
-                                            transition-all duration-300 transform hover:shadow-blue-900/50">
+                        <a href="/about" class="md:absolute md:bottom-4 md:right-4 mt-12 inline-flex px-8 py-4 rounded-xl bg-gradient-to-r from-sky-700 to-sky-500 text-white font-semibold text-lg shadow-lg 
+                                                transition-all duration-300 transform hover:shadow-blue-900/50">
                             <span class="relative z-10"> Read more.</span>
                         </a>
                 </div>
