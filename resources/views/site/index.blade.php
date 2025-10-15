@@ -12,37 +12,40 @@
                 <img src="{{ asset('images/site.png') }}" class="mx-[-3rem] my-[5rem] min-w-[calc(100%+6rem)] brightness-[1]">
             </div>
             
-            <h2 class="text-3xl font-semibold mb-6">Overview</h2>
-            <p class="text-lg leading-relaxed mb-8">
-                This website was made in the same way as SphereNet, using the 
-                <a href="https://laravel.com/">Laravel</a> PHP framework and TailwindCSS for class based styling, but has a much more harmonious design and homogenous styling than
-                 it given all that I learned while making SphereNet V1 and 2. I started designing this site in March of this year at the reccomendation of a friend in IT, 
-                 and it has been a very rewarding project to work on, and has allowed me to learn many new things that Laravel is capable of.
-            </p>
+            <div class="p-8 mb-10 rounded-xl text-gray-100 bg-gray-900/30">
+                <h2 class="text-4xl font-bold text-blue-400 mb-10">Overview</h2>
+                <p class="text-lg leading-relaxed mb-8">
+                    This website was made in the same way as SphereNet, using the 
+                    <a href="https://laravel.com/">Laravel</a> PHP framework and TailwindCSS for class based styling, but has a much more harmonious design and homogenous styling than
+                    it given all that I learned while making SphereNet V1 and 2. I started designing this site in March of this year at the reccomendation of a friend in IT, 
+                    and it has been a very rewarding project to work on, and has allowed me to learn many new things that Laravel is capable of.
+                </p>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">
-                <div>
-                    <h3 class="text-2xl font-semibold mb-4">Skills Used</h3>
-                    <ul class="list-disc list-inside space-y-2">
-                        <li>Frameworking</li>
-                        <li>TailwindCSS</li>
-                        <li>PHP</li>
-                        <li>HTML</li>
-                        <li>Git repo management</li>
-                    </ul>
-                </div>
-            </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div>
+                        <h3 class="text-3xl font-bold text-blue-400 mb-6">Skills Used</h3>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li>Frameworking</li>
+                            <li>TailwindCSS</li>
+                            <li>PHP</li>
+                            <li>HTML</li>
+                            <li>Git repo management</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-blue-400 mb-6">Stats</h3>
+                        <div class="card">
+                            <div class="mt-3">
+                                <p>Total Lines of Code: {{ $stats['lines']-3623 ?? 'N/A' }}</p>
+                                <p>Number of Files: {{ $stats['files'] ?? 'N/A' }}</p>
+                                <p>Number of Folders: {{ $stats['folders'] ?? 'N/A' }}</p>
 
-            <div class="card">
-                <div class="mt-3">
-                    <p>Total Lines of Code: {{ $stats['lines'] ?? 'N/A' }}</p>
-                    <p>Number of Files: {{ $stats['files'] ?? 'N/A' }}</p>
-                    <p>Number of Folders: {{ $stats['folders'] ?? 'N/A' }}</p>
-
-                    @if(!empty($stats['updated_at']))
-                        <p>Last Updated: {{ \Carbon\Carbon::parse($stats['updated_at'])->diffForHumans() }}</p>
-                    @endif
-                </div>
+                                @if(!empty($stats['updated_at']))
+                                    <p>Last Updated: {{ \Carbon\Carbon::parse($stats['updated_at'])->diffForHumans() }}</p>
+                                @endif
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

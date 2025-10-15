@@ -66,6 +66,7 @@ document.querySelectorAll('.dropdown-item').forEach(item => {
 	item.addEventListener('click', () => {
 		const dropdown = item.querySelector('.dropdown-content');
 		const arrow = item.querySelector('.arrow');
+		console.log(dropdown);
 
 		// Toggle open/close
 		if (dropdown.classList.contains('opacity-0')) {
