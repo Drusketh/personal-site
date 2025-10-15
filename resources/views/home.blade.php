@@ -18,7 +18,7 @@
             </div>
 
             <div class="flex">
-                <div class="relative text-center z-10 lg:mb-24 mx-32 p-8 pb-32 md:pb-24 bg-gray-800 rounded-xl">
+                <div class="relative text-center z-10 lg:mb-24 sm:mx-8 md:mx-32 p-8 pb-32 md:pb-24 bg-gray-800 rounded-xl">
                         <p class="mt-4 text-lg">
                             Hello! I am a self-taught programmer, CAD designer, Blender Artist, and 3D Printing Enthusiast with a passion for learning 
                             new skills and technologies. I have 9 years of amateur programming experience and 4 years of intense CAD experience. If you'd like to learn more about my 
