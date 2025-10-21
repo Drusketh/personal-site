@@ -33,7 +33,7 @@
                 </p>
             </div>
 
-            <div class="flex flex-col gap-12 px-8 pt-8 mt-8 w-full rounded-xl bg-gray-900/30 backdrop-blur-md">
+            <div class="flex flex-col gap-12 p-8 mt-8  w-full rounded-xl bg-gray-900/30 backdrop-blur-md">
                 <div class="flex flex-col gap-6 w-full">
                     <span class="dropdown-item">
                         <h2 class="text-3xl font-bold text-blue-400">Certifications</h2>
@@ -200,7 +200,7 @@
                         </ul>
                     </section>
 
-                    <section id="cadlist" class="min-h-auto p-8 mb-16 text-white flex flex-col items-start rounded-xl bg-white/5 backdrop-blur-md border border-white/20">
+                    <section id="cadlist" class="min-h-auto p-8 mb-8 text-white flex flex-col items-start rounded-xl bg-white/5 backdrop-blur-md border border-white/20">
                         <div class="flex flex-row gap-6 w-full justify-between">
                             <h2 class="text-3xl font-bold text-blue-400 mb-10">Design Software</h2>
 
@@ -335,15 +335,62 @@
                 </div>
             </div>
                 
-            <div class="p-8  rounded-xl text-gray-100 bg-gray-900/30 backdrop-blur-md">
+            <div class="p-8 mt-8 rounded-xl text-gray-100 bg-gray-900/30 backdrop-blur-md">
                 <h2 class="text-4xl font-bold text-blue-400 mb-10">Hobbies</h2>
-                <p class="text-lg leading-relaxed mb-8">
-                    3D Printing
-                </p>
+                <div class="flex flex-col lg:flex-row gap-12 w-full justify-between items-start">
+                    <section id="3dp" class="min-h-auto p-8 mb-16 basis-1/2 text-white flex flex-col items-start rounded-xl bg-white/5 backdrop-blur-md border border-white/20">
+                        <h2 class="text-3xl font-bold text-blue-400 mb-10">3D Printing</h2>
 
-                <p class="text-lg leading-relaxed mb-8">
-                    Working on Cars
-                </p>
+                        <p class="text-md leading-relaxed mb-8">
+                            I been aware of 3D Printing since my father built one himself in 2014, but I only became interested after tinkering with the 3D printer at my high school.
+                            In my senior year of High School my father gifted me his original 3D printer after he built himself 2 more, which helped me develop more mechanical 
+                            design skills, as well as using various 3D printing softwares and learning the basics of GCode. Starting in May of this year, I began building 2 Voron 
+                            printers, the v0.2 and v2.4. Both of these are CoreXY printers with enclosed build chambers, and are capable of printing at very high speeds with 
+                            ABS, ASA, PLA, and PETG with excellent quality.
+                        </p>
+                        
+                        <div class="flex w-full justify-between p-4 mb-8">
+                            <div class="flex flex-col w-48 items-center">
+                                <a href="./images/Voron/v0_e.png" target="_blank" class="flex h-full bg-gray-950 border-2 border-solid border-black">
+                                    <img src="{{ asset('./images/Voron/v0_e.png') }}" class="w-48">
+                                </a>
+                                <p class="mt-4 text-sm text-gray-300">Voron v0.2</p>
+                            </div>
+                            <div class="flex flex-col w-48 items-center">
+                                <a href="./images/Voron/v2_e.png" target="_blank" class="flex h-full bg-gray-950 border-2 border-solid border-black">
+                                    <img src="{{ asset('images/Voron/v2_e.png') }}" class="w-48">
+                                </a>
+                                <p class="mt-4 text-sm text-gray-300">Voron v2.4</p>
+                            </div>
+                        </div>
+
+                        <p class="text-md leading-relaxed">
+                            Both of these were sourced from kits and since being built each have over 150 hours of print time and have produced many functional and 
+                            artistic pieces. The v0 is great for small high speed part revisions as it features a 120mm³ build volume, which allows it to heat the bed to 
+                            110°C and chamber to 50°C within 5 minutes. The v2 is a much larger printer with a 300mm³ build volume, which allows for much larger prints, 
+                            but takes 15 minutes to heat the bed to 110 and nearly 45 minutes to fully heat soak.
+
+                            </br></br>
+
+                            In the future I would like to build a mod of the Voron v0, called the Dueling Zero. It features the same CoreXY geometry as the v0, as well as frame 
+                            components but has a larger 180mm³ build volume, dual internal spool holders, and 2 independent CoreXY gantries for multi-material printing.
+                        </p>
+                    </section>
+
+                    <section id="cars" class="min-h-auto p-8 mb-16 basis-1/2 text-white flex flex-col items-start rounded-xl bg-white/5 backdrop-blur-md border border-white/20">
+                        <h2 class="text-3xl font-bold text-blue-400 mb-10">Cars</h2>
+
+                        <p class="text-md leading-relaxed">
+                            I suppose that I was destined to like cars. My father had a Nissan 240SX when I was in the born, and being taken for a ride in it was one of the only 
+                            ways to get me to sleep as a baby. In high school I started to take an interest in them, and I began learning about all of the intricate systems that 
+                            make up a car. So far I have owned 4 vehicles, a 1999 Acura 3.5RL, a 2008 GMC Canyon, a 2001 Honda Civic, and a frankenstein 1957 VW Beetle Project,
+                            which is the Sterling. Unfortunately I have a poor taste in cars as all of them have very limited aftermarket support, but I have learned how to 
+                            maintain and repair effectively every part of each of them. Currently my Canyon is out of comission with a spun main bearing, so I have been working on 
+                            sourcing parts for an LS swap. The Sterling is a long term project that I hope to have roadworthy in the next few years, but for now it sits eleganly 
+                            in the backyard.
+                        </p>
+                    </section>
+                </div>
             </div>
 
             <div class="bg-gray-800 rounded-xl p-8">
@@ -352,27 +399,24 @@
                     <a href="/images/CSWA.png" class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
                         <img src="{{ asset('images/CSWA.png') }}" class="my-auto">
                     </a>
-                    {{-- <a class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
-                        <img src="{{ asset('images/spherenet-1.png') }}" class="my-auto">
+                    <a href="images/Voron/v0.png" class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
+                        <img src="{{ asset('images/Voron/v0.png') }}" class="my-auto">
                     </a>
-                    <a class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
-                        <img src="{{ asset('images/spherenet-2.png') }}" class="my-auto">
+                    <a href="images/Voron/v0_1.png" class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
+                        <img src="{{ asset('images/Voron/v0_1.png') }}" class="my-auto">
                     </a>
-                    <a class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
-                        <img src="{{ asset('images/spherenet-3.png') }}" class="my-auto">
+                    <a href="images/Voron/v2_f.jpg" class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
+                        <img src="{{ asset('images/Voron/v2_f.jpg') }}" class="my-auto">
                     </a>
-                    <a class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
-                        <img src="{{ asset('images/spherenet-4.png') }}" class="my-auto">
+                    <a href="images/Voron/v2_i.jpg" class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
+                        <img src="{{ asset('images/Voron/v2_i.jpg') }}" class="my-auto">
                     </a>
-                    <a class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
-                        <img src="{{ asset('images/spherenet-5.png') }}" class="my-auto">
+                    <a href="images/Voron/v2_b.jpg" class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
+                        <img src="{{ asset('images/Voron/v2_b.jpg') }}" class="my-auto">
                     </a>
-                    <a class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
-                        <img src="{{ asset('images/spherenet-6.png') }}" class="my-auto">
+                    <a href="images/Voron/d0.png" class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
+                        <img src="{{ asset('images/Voron/d0.png') }}" class="my-auto">
                     </a>
-                    <a class="flex h-full bg-gray-950 border-2 border-solid border-black" target="_blank">
-                        <img src="{{ asset('images/spherenet-7.png') }}" class="my-auto">
-                    </a> --}}
                 </div>
             </div> 
         </div>
